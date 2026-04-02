@@ -1,0 +1,113 @@
+/* 2*3 layout */
+.characters {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin: 30px 0;
+}
+
+/* card center */
+.characters article {
+  text-align: center;
+}
+
+/* image size */
+.characters img {
+  width: 100px;
+}
+
+
+
+
+
+/* input style */
+.favorite-form input,
+.favorite-form select,
+.favorite-form textarea {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* textarea height */
+.favorite-form textarea {
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+/* radio button */
+.favorite-form input[type="radio"] {
+    transform: scale(1.2);
+    margin-right: 8px;
+}
+
+/* submit button */
+.favorite-form button {
+    padding: 8px 20px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+
+
+
+/* header 横幅容器 */
+.header-banner {
+  display: flex; /* open the flex*/
+  align-items: center; /* vertical center */
+  gap: 20px; /* gap between two images */
+  padding: 20px;
+  
+}
+
+/* leftimg */
+.banner-left {
+  flex: 3; /* three parts */
+  width: 100%;
+  height: auto; 
+}
+
+/* rightimg */
+.banner-right {
+  flex: 1; 
+  width: 100%;
+  height: auto;
+}
+
+
+/* movie part */
+.movie-title {
+  text-align: center; 
+  margin-top: 60px; 
+}
+
+.movie-title h1 {
+  margin: 0; 
+  font-size: 28px;
+}
+
+.movie-title p {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+video {
+  /* let video in the middle */
+  display: block;
+  margin: 30px auto;
+}
+.video-trailer {
+  text-align: center; /* let the text in the middle */
+  margin: 30px 0; 
+}
+.Character-title {
+  text-align: center; 
+  margin: 30px 0; 
+}
+.header-nav {
+  text-align: center; 
+}
