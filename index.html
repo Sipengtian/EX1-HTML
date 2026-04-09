@@ -4,137 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shinchan - Homepage</title>
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
     <header>
-        <section>      
-        <table width="100%" cellpadding="20" cellspacing="0">
-            <tr valign="middle">
-                <td width="75%" align="center">
-                    <img src="assets/shin-chan-banner.jpg" alt="Shinchan Banner" width="100%">
-                </td>
-                <td width="25%" align="center">
-                    <img src="assets/naughtiest-son.jpg" alt="Shinchan Logo" width="100%">
-                </td>
-            </tr>
-        </table>
-        </section>
-        
-        <section align="center">
+        <!--top picture-->
+        <div class="toppicture">    
+                    <img src="assets/shin-chan-banner.jpg" alt="Shinchan Banner" width="100%" class="main-banner">
+                    <img src="assets/naughtiest-son.jpg" alt="Shinchan Logo" width="100%" class="main-logo">
+        </div>
+    </header>
+    <!--navigation bar-->
+        <div  class="nav">
             <nav>
-                <a href="#movie">Shinchan: Shiro and the Coal Town</a> |
-                <a href="#characters">Characters</a> |
+                <a href="#movie">Shinchan: Shiro and the Coal Town</a>
+                <a href="#characters">Characters</a>
                 <a href="#favorite">Who's your favorite?</a>
             </nav>
-        </section>
-    </header>
+        </div>
 
     <main>
-        <section id="movie">
-            <section align="center" style="margin-top:60px">
+        <!--movie-->
+        <section id="movie" class="video-container">
+            <div class="movie-header">  
                 <h1>Shinchan: Shiro and the Coal Town</h1>
-                <p>(Available on:Nintendo Switch and Windows PC)</p>
-            </section>
-
-            <section align="center">
-                <video src="assets/shinchan-and-the-coal-town.mp4" width="80%" controls></video>
-            </section>      
-            <p align="center">Video Trailer</p>
+                <p class="pvideo">(Available on:Nintendo Switch and Windows PC)</p>
+            </div>
+            <div  class="movie">
+                <video class="video"  src="assets/shinchan-and-the-coal-town.mp4" width="80%" controls></video>
+            </div>      
+            <p class="video-bottom">Video Trailer</p>
         </section>
-
+        <!--characters-->
         <section id="characters">
-            <h2 align="center">The Characters</h2>
+            <h2>The Characters</h2>
 
-            <table width="100%" cellpadding="15" cellspacing="25" align="center">
-                <tr>
-                    <td align="center">
+            <div class="characters-box">
+                <div class="characters-grid">
+                    
+                    <div class="character-card">
                         <h3>Shinnosuke Nohara (Shinchan)</h3>
-                        <img src="assets/character-shinchan.png" alt="Shinchan" width="100">
+                        <img src="assets/character-shinchan.png" alt="Shinchan">
                         <p>The mischievous 5-year-old protagonist known for his hilarious antics and love of choco chips.</p>
-                    </td>
-                    <td align="center">
+                    </div>
+
+                    <div class="character-card">
                         <h3>Misae Nohara (Mom)</h3>
-                        <img src="assets/character-misae.webp" alt="Mom" width="100">
+                        <img src="assets/character-misae.webp" alt="Mom">
                         <p>Shinchan's short-tempered but loving mother, always trying to keep him in line.</p>
-                    </td>
-                    <td align="center">
+                    </div>
+
+                    <div class="character-card">
                         <h3>Hiroshi Nohara (Dad)</h3>
-                        <img src="assets/character-hiroshi.webp" alt="Dad" width="100">
+                        <img src="assets/character-hiroshi.webp" alt="Dad">
                         <p>The laid-back father who works at a company and enjoys his evening beer.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td align="center">
+                    </div>
+
+                    <div class="character-card">
                         <h3>Himawari (Sister)</h3>
-                        <img src="assets/character-himawari.png" alt="Himawari" width="100">
-                        <p>The youngest of the Noharas. Loves shiny objects and brand-name goods. Smiles sideways, like Shinchan</p>
-                    </td>
-                    <td align="center">
+                        <img src="assets/character-himawari.png" alt="Himawari">
+                        <p>The youngest of the Noharas. Loves shiny objects and brand-name goods. Smiles sideways, like Shinchan.</p>
+                    </div>
+
+                    <div class="character-card">
                         <h3>Yukino Nohara (Shiro)</h3>
-                        <img src="assets/character-shiro.png" alt="Shiro" width="100">
+                        <img src="assets/character-shiro.png" alt="Shiro">
                         <p>The family dog — small, fluffy, and sometimes the most sensible member of the household.</p>
-                    </td>
-                    <td align="center">
+                    </div>
+
+                    <div class="character-card">
                         <h3>Toru Kazama</h3>
-                        <img src="assets/character-toru-kazama.webp" alt="Kazama" width="100">
-                        <p>The smart and responsible friend of Shinchan,often the voice of reason in the group.</p>
-                    </td>
-                </tr>
-            </table>
+                        <img src="assets/character-toru-kazama.webp" alt="Kazama">
+                        <p>The smart and responsible friend of Shinchan, often the voice of reason in the group.</p>
+                    </div>
+
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
         <section id="favorite">
             <h2>Who's your favorite?</h2>
-            <form>
-                <p>
-                    Who's your favorite character?<br>
-                    <select style="padding:6px; font-size:16px;">
-                        <option>Shinchan</option>
-                        <option>Misae (Mom)</option>
-                        <option>Hiroshi (Dad)</option>
-                        <option>Himawari (Sister)</option>
-                        <option>Shiro</option>
-                        <option>Kazama</option>
-                    </select>
-                </p>
+            <div class="favorite-box">
+                <form>
+                    <div class="form-group">
+                        <label>Who's your favorite character?</label>
+                        <select>
+                            <option>Shinchan</option>
+                            <option>Misae (Mom)</option>
+                            <option>Hiroshi (Dad)</option>
+                            <option>Himawari (Sister)</option>
+                            <option>Shiro</option>
+                            <option>Kazama</option>
+                        </select>
+                    </div>
 
-                <h3>Character not in the list? Write their name below:</h3>
-                <p>
-                    Your other favourite character:<br>
-                    <input type="text" placeholder="Enter character name" style="padding:6px; font-size:16px; width:300px;">
-                </p>
+                    <div class="form-group">
+                        <label>Character not in the list? Write their name below:</label>
+                        <input type="text" placeholder="Enter character name">
+                    </div>
 
-                <p>Why do you like this character?</p>
-                <textarea placeholder="State your reasons in a couple of lines..." style="width:100%; height:100px; padding:6px; font-size:16px;"></textarea>
+                    <div class="form-group">
+                        <label>Why do you like this character?</label>
+                        <textarea placeholder="State your reasons in a couple of lines..."></textarea>
+                    </div>
 
-                <h2>Tell us a bit more about yourself</h2>
-                <p>
-                    Your Name:<br>
-                    <input type="text" placeholder="Enter your name" style="padding:6px; font-size:16px; width:300px;">
-                </p>
-
-                <p>
-                    Your Gender:<br>
-                    <input type="radio" name="gender" id="male" style="transform:scale(1.2);">
-                    <label for="male">Male</label>
-                    <input type="radio" name="gender" id="female" style="transform:scale(1.2); margin-left:8px;">
-                    <label for="female">Female</label>
-                </p>
-
-                <p>
-                    Your Date of Birth:<br>
-                    <input type="text" placeholder="dd.mm.yyyy" style="padding:6px; font-size:16px; width:300px;">
-                </p>
-
-                <p>
-                    Your Email:<br>
-                    <input type="email" placeholder="Enter your email" style="padding:6px; font-size:16px; width:300px;">
-                </p>
-
-                <button type="submit" style="padding:8px 20px; cursor:pointer; font-size:16px;">Submit</button>
-            </form>
+                    <h3>Tell us a bit more about yourself</h3>
+                    <!--information-->
+                    <div class="form-group">
+                        <label>Your Name:</label>
+                        <input type="text" placeholder="Enter your name">
+                    </div>
+                    <!--choose gender-->
+                    <div class="form-group">
+                        <label>Your Gender:</label>
+                        <div class="gender-options">
+                            <label><input type="radio" name="gender"> Male</label>
+                            <label><input type="radio" name="gender"> Female</label>
+                        </div>
+                    </div>
+                    <!--information-->
+                    <div class="form-group">
+                        <label>Your Date of Birth:</label>
+                        <input type="text" placeholder="dd.mm.yyyy">
+                    </div>
+                    <div class="form-group">
+                        <label>Your Email:</label>
+                        <input type="email" placeholder="Enter your email">
+                    </div>
+                    <!--bottom-->
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
         </section>
     </footer>
 </body>
